@@ -8,7 +8,7 @@ const Navigation = () => {
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="text-white text-xl font-bold flex items-center gap-2">
           <Code className="h-6 w-6" />
-          <span>Karim Ou</span>
+          <span>Karim Ourra</span>
         </Link>
         <div className="flex items-center gap-6">
           <Link to="/" className="text-white hover:text-accent flex items-center gap-2">

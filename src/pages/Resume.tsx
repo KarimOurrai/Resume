@@ -12,8 +12,12 @@ const Resume = () => {
               <h2 className="text-2xl font-bold text-white">Professional Summary</h2>
             </div>
             <p className="text-gray-300">
-              Senior Java Developer with 5+ years of experience in developing enterprise-level applications.
-              Specialized in Spring Boot, microservices architecture, and cloud technologies.
+
+            I am a passionate software engineer who loves building great products and helping companies succeed. 
+            
+            With experience across all layers of web development—from databases to services to user interfaces—I value good design and adapt quickly to changing technologies. 
+            
+            Strong organizational and analytical skills enhance my ability to deliver high-quality solutions.            
             </p>
           </section>
 
@@ -28,12 +32,15 @@ const Resume = () => {
                 "Java",
                 "Spring Boot",
                 "Microservices",
-                "REST APIs",
+                "JS/TS",
+                "React",
+                "Angular",
                 "SQL",
                 "Git",
                 "Docker",
                 "Kubernetes",
                 "AWS",
+                "Kafka"
               ].map((skill) => (
                 <div
                   key={skill}
@@ -53,19 +60,19 @@ const Resume = () => {
             </div>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-white">Senior Java Developer</h3>
-                <p className="text-primary">Tech Corp • 2020 - Present</p>
+                <h3 className="text-xl font-semibold text-white">Tech Lead Java Developer</h3>
+                <p className="text-primary">Intelcia • 2023 - Present</p>
                 <ul className="list-disc list-inside text-gray-300 mt-2">
                   <li>Led development of microservices-based applications</li>
-                  <li>Implemented CI/CD pipelines using Jenkins</li>
+                  <li>Implemented CI/CD pipelines using Gitlab CI/CD and Kubernetes</li>
                   <li>Mentored junior developers</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white">Java Developer</h3>
-                <p className="text-primary">Software Solutions Inc • 2018 - 2020</p>
+                <h3 className="text-xl font-semibold text-white">Senior Java Developer</h3>
+                <p className="text-primary">Software Solutions Inc • 2020 - 2023</p>
                 <ul className="list-disc list-inside text-gray-300 mt-2">
-                  <li>Developed and maintained Spring Boot applications</li>
+                  <li>Developed aof microservices-based applications</li>
                   <li>Implemented RESTful APIs</li>
                   <li>Optimized database queries and performance</li>
                 </ul>
