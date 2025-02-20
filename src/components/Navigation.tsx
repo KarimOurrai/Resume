@@ -19,10 +19,6 @@ const Navigation = () => {
             <Briefcase className="h-4 w-4" />
             <span>Resume</span>
           </Link>
-          <Link to="/portfolio" className="text-white hover:text-accent flex items-center gap-2">
-            <Code className="h-4 w-4" />
-            <span>Portfolio</span>
-          </Link>
           <ThemeToggle />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -14,18 +14,27 @@ const Home = () => {
           </p>
           <div className="flex gap-4 justify-center">
             <Link
-              to="/portfolio"
-              className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
-            >
-              View My Work
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
               to="/resume"
               className="bg-secondary border border-primary/50 hover:border-primary text-white px-6 py-3 rounded-lg transition-colors"
             >
               Resume
             </Link>
+          </div>
+          <div className="flex gap-4 justify-center mt-4">
+            <a
+              href="mailto:karim.ourrai@gmail.com"
+              className=" text-white p-3 rounded-lg transition-colors"
+              aria-label="Email"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
+            <a
+              href="https://github.com/KarimOurrai"
+              className=" text-white p-3 rounded-lg transition-colors"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" />
+            </a>
           </div>
         </div>
       </div>
