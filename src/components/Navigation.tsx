@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Home, Briefcase, Code } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   return (
@@ -9,7 +10,7 @@ const Navigation = () => {
           <Code className="h-6 w-6" />
           <span>Java Dev</span>
         </Link>
-        <div className="flex gap-6">
+        <div className="flex items-center gap-6">
           <Link to="/" className="text-white hover:text-accent flex items-center gap-2">
             <Home className="h-4 w-4" />
             <span>Home</span>
@@ -22,6 +23,7 @@ const Navigation = () => {
             <Code className="h-4 w-4" />
             <span>Portfolio</span>
           </Link>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
