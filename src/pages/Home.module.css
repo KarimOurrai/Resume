@@ -1,0 +1,4 @@
+.imageContainer {
+  transform: translateY(var(--scroll-y));
+  opacity: var(--image-opacity);
+} 
