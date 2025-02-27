@@ -5,41 +5,55 @@ const Experience = () => {
   const { theme } = useTheme();
   const experiences = [
     {
-      title: "Tech Lead and Java Consultant",
-      company: "La Poste",
-      period: "2021 - Present",
-      description: "Leading the Digital Factory project for La Poste France, focusing on integrating premium offerings through microservices architecture.",
+      title: "Full-stack Software Engineer and Tech-Lead",
+      company: "Intelcia",
+      period: "March 2020 - Present",
+      description: "Participated in development of a large system responsible for tracking and maintaining equipment between multiple French telecommunication Operators for SFR.",
       responsibilities: [
+        "Developing and maintenance of Back-end and front-end of the app",
         "Technical design of frontend and backend modules",
         "Technical support to the dev team",
         "Strengthening the development team"
       ],
-      skills: ["Angular", "Spring Boot", "Kafka", "Cassandra", "ElasticSearch", "Docker", "Jenkins"]
+      skills: ["Angular", "Spring Boot", "Kafka", "ELK", "Git", "JIRA", "REST", "SOAP", "Oracle", "Spring Batch", "Docker", "GitLab CI/CD", "JWT", "OAuth"]
     },
     {
-      title: "Full-stack Software Engineer and Tech Lead",
-      company: "DOCAPOST",
-      period: "2017 - 2021",
-      description: "Led development of insurance solution for managing brokers and agents, handling policies, benefits administration, and document management.",
+      title: "Full-stack Software Engineer and Tech-Lead",
+      company: "Atos",
+      period: "February 2021 - December 2022",
+      description: "Participated in the Digital Factory project for La Poste France, focusing on integrating premium offerings through microservices architecture.",
       responsibilities: [
-        "Developing new features and Application Maintenance",
-        "Payment system integration",
-        "Technical design specifications",
-        "Code review"
+        "Developing and maintenance of Back-end and front-end of the app",
+        "Technical design of frontend and backend modules",
+        "Technical support to the dev team",
+        "Strengthening the development team"
       ],
-      skills: ["React", "Spring Boot", "PostgreSQL", "ElasticSearch", "Docker", "GitLab-CI"]
+      skills: ["Angular", "Spring Boot", "Kafka", "ELK", "Git", "JIRA", "REST", "SOAP", "Oracle", "Spring Batch", "Docker", "GitLab CI/CD", "JWT", "OAuth"]
+    },
+    {
+      title: "Full-stack Software Engineer and Tech-Lead",
+      company: "DOCAPOST",
+      period: "April 2017 - December 2020",
+      description: "Participated in large project for a client in the Commercial Court in France and led development of insurance solution for managing brokers and agents, handling policies, benefits administration, and document management.",
+      responsibilities: [
+        "Developing and maintenance of Back-end and front-end of the app",
+        "Responsible for creating microservices and introducing them to a big monolithic app",
+        "Ensuring code quality with pair review",
+        "Analyzing use cases and proposing proper implementation"
+      ],
+      skills: ["React", "Spring Boot", "PostgreSQL", "Hibernate", "Aspose", "Mapstruct", "JasperReport", "Solr", "QueryDSL", "JPA", "CDI", "Batch JSR 352", "JUnit", "Mockito", "Confluence", "JIRA", "Jenkins", "SVN"]
     },
     {
       title: "Full-stack Software Engineer",
       company: "Oritech",
-      period: "2015 - 2017",
+      period: "December 2015 - April 2017",
       description: "Developed various SaaS platforms including vehicle management and tracking systems, and RFID-based applications.",
       responsibilities: [
-        "Vehicle management platform development",
-        "RFID integration projects",
-        "Full-stack development with Java and Angular"
+        "Full-stack development of vehicle management platforms",
+        "Implementation of RFID-based solutions",
+        "Development of tracking systems"
       ],
-      skills: ["Angular", "Spring MVC", "MySQL", "Hibernate", "RFID", "Git"]
+      skills: ["Angular", "JSF/PrimeFaces", "Spring MVC", "Spring", "Spring REST", "MySQL", "Hibernate", "Quartz", "Spring Batch"]
     }
   ];
 
