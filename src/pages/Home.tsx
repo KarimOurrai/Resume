@@ -2,6 +2,7 @@ import { Mail, Github, Linkedin } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import styles from "./Home.module.css";
+import TechCube from "../components/TechCube";
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -95,6 +96,10 @@ const Home = () => {
           >
             View my experience
           </button>
+
+          <div className="mt-4 absolute left-1/2 -translate-x-1/2 w-full max-w-4xl">
+            <TechCube />
+          </div>
         </div>
       </div>
     </div>

@@ -36,10 +36,10 @@ const TechCube = () => {
       setTimeout(() => {
         setCurrentFaceIndex(nextIndex);
         setIsAnimating(false);
-      }, 1000);
+      }, 200);
     };
 
-    const intervalId = setInterval(rotateCube, 3000);
+    const intervalId = setInterval(rotateCube, 1000);
 
     return () => {
       clearInterval(intervalId);
