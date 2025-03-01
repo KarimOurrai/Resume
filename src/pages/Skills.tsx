@@ -10,7 +10,11 @@ const Skills = () => {
   return (
     <div className={`min-h-screen pt-24 px-8 ${theme === 'light' ? 'bg-gray-100' : 'bg-[#1a1e23]'}`}>
       <div className="max-w-6xl mx-auto">
-        <h1 className={`text-6xl font-light mb-16 text-center ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>{t('skills.title')}</h1>
+        <h1 className={`text-4xl lg:text-6xl font-light mb-16 text-center ${
+          theme === 'light' ? 'text-gray-900' : 'text-white'
+        }`}>
+          {t('skills.title')}
+        </h1>
 
         <div className="space-y-12">
           {Object.entries(skillLogos).map(([category, skills]) => (
@@ -31,4 +35,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;
