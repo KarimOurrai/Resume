@@ -1,5 +1,5 @@
 export const skillLogos = {
-  Backend: {
+  backend: {
     "Java": "/logos/java.svg",
     "Spring": "/logos/spring.svg",
     "PostgreSQL": "/logos/postgresql.svg",
@@ -9,7 +9,7 @@ export const skillLogos = {
     "SOAP": "/logos/soap.svg",
     "Hibernate": "/logos/hibernate.svg"
   },
-  Frontend: {
+  frontend: {
     "React": "/logos/react.svg",
     "Angular": "/logos/angular.svg",
     "TypeScript": "/logos/typescript.svg",
@@ -18,7 +18,7 @@ export const skillLogos = {
     "CSS3": "/logos/css3.svg",
     "JSF": "/logos/jsf.svg"
   },
-  Microservices: {
+  microservices: {
     "Docker": "/logos/docker.svg",
     "Kubernetes": "/logos/kubernetes.svg",
     "Kafka": "/logos/kafka.svg",

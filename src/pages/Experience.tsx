@@ -1,58 +1,42 @@
 import { Briefcase } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
+
   const experiences = [
     {
-      title: "Full-stack Software Engineer and Tech-Lead",
-      company: "Intelcia",
-      period: "March 2020 - Present",
-      description: "Participated in development of a large system responsible for tracking and maintaining equipment between multiple French telecommunication Operators for SFR.",
-      responsibilities: [
-        "Developing and maintenance of Back-end and front-end of the app",
-        "Technical design of frontend and backend modules",
-        "Technical support to the dev team",
-        "Strengthening the development team"
-      ],
+      title: t('resume.experience.positions.techLeadIntelcia.title'),
+      company: t('resume.experience.positions.techLeadIntelcia.company'),
+      period: t('resume.experience.positions.techLeadIntelcia.period'),
+      description: t('resume.experience.positions.techLeadIntelcia.description'),
+      responsibilities: t('resume.experience.positions.techLeadIntelcia.responsibilities', { returnObjects: true }) as string[],
       skills: ["Angular", "Spring Boot", "Kafka", "ELK", "Git", "JIRA", "REST", "SOAP", "Oracle", "Spring Batch", "Docker", "GitLab CI/CD", "JWT", "OAuth"]
     },
     {
-      title: "Full-stack Software Engineer and Tech-Lead",
-      company: "Atos",
-      period: "February 2021 - December 2022",
-      description: "Participated in the Digital Factory project for La Poste France, focusing on integrating premium offerings through microservices architecture.",
-      responsibilities: [
-        "Developing and maintenance of Back-end and front-end of the app",
-        "Technical design of frontend and backend modules",
-        "Technical support to the dev team",
-        "Strengthening the development team"
-      ],
+      title: t('resume.experience.positions.techLeadAtos.title'),
+      company: t('resume.experience.positions.techLeadAtos.company'),
+      period: t('resume.experience.positions.techLeadAtos.period'),
+      description: t('resume.experience.positions.techLeadAtos.description'),
+      responsibilities: t('resume.experience.positions.techLeadAtos.responsibilities', { returnObjects: true }) as string[],
       skills: ["Angular", "Spring Boot", "Kafka", "ELK", "Git", "JIRA", "REST", "SOAP", "Oracle", "Spring Batch", "Docker", "GitLab CI/CD", "JWT", "OAuth"]
     },
     {
-      title: "Full-stack Software Engineer and Tech-Lead",
-      company: "DOCAPOST",
-      period: "April 2017 - December 2020",
-      description: "Participated in large project for a client in the Commercial Court in France and led development of insurance solution for managing brokers and agents, handling policies, benefits administration, and document management.",
-      responsibilities: [
-        "Developing and maintenance of Back-end and front-end of the app",
-        "Responsible for creating microservices and introducing them to a big monolithic app",
-        "Ensuring code quality with pair review",
-        "Analyzing use cases and proposing proper implementation"
-      ],
+      title: t('resume.experience.positions.techLeadDocaposte.title'),
+      company: t('resume.experience.positions.techLeadDocaposte.company'),
+      period: t('resume.experience.positions.techLeadDocaposte.period'),
+      description: t('resume.experience.positions.techLeadDocaposte.description'),
+      responsibilities: t('resume.experience.positions.techLeadDocaposte.responsibilities', { returnObjects: true }) as string[],
       skills: ["React", "Spring Boot", "PostgreSQL", "Hibernate", "Aspose", "Mapstruct", "JasperReport", "Solr", "QueryDSL", "JPA", "CDI", "Batch JSR 352", "JUnit", "Mockito", "Confluence", "JIRA", "Jenkins", "SVN"]
     },
     {
-      title: "Full-stack Software Engineer",
-      company: "Oritech",
-      period: "December 2015 - April 2017",
-      description: "Developed various SaaS platforms including vehicle management and tracking systems, and RFID-based applications.",
-      responsibilities: [
-        "Full-stack development of vehicle management platforms",
-        "Implementation of RFID-based solutions",
-        "Development of tracking systems"
-      ],
+      title: t('resume.experience.positions.softwareEngineerOritech.title'),
+      company: t('resume.experience.positions.softwareEngineerOritech.company'),
+      period: t('resume.experience.positions.softwareEngineerOritech.period'),
+      description: t('resume.experience.positions.softwareEngineerOritech.description'),
+      responsibilities: t('resume.experience.positions.softwareEngineerOritech.responsibilities', { returnObjects: true }) as string[],
       skills: ["Angular", "JSF/PrimeFaces", "Spring MVC", "Spring", "Spring REST", "MySQL", "Hibernate", "Quartz", "Spring Batch"]
     }
   ];
@@ -60,7 +44,7 @@ const Experience = () => {
   return (
     <div className={`min-h-screen pt-24 px-8 ${theme === 'light' ? 'bg-gray-100' : 'bg-[#1a1e23]'}`}>
       <div className="max-w-6xl mx-auto">
-        <h1 className={`text-6xl font-light mb-16 text-center ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>Experience</h1>
+        <h1 className={`text-6xl font-light mb-16 text-center ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>{t('experience.title')}</h1>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-8 border-l-2 border-pink-500">
@@ -76,9 +60,9 @@ const Experience = () => {
                 </div>
                 <p className={`mb-4 ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>{exp.description}</p>
                 <ul className={`list-disc list-inside mb-4 ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>
-                  {exp.responsibilities.map((resp, idx) => (
+                  {Array.isArray(exp.responsibilities) ? exp.responsibilities.map((resp, idx) => (
                     <li key={idx} className="mb-1">{resp}</li>
-                  ))}
+                  )) : null}
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill) => (

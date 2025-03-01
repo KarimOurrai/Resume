@@ -1,0 +1,122 @@
+{
+  "home": {
+    "greeting": "Hello! I am",
+    "name": "Karim Ourrai",
+    "roles": {
+      "techLead": "Tech Lead",
+      "softwareEngineer": "Software Engineer"
+    },
+    "description": "I'm a passionate Software Engineer who loves to write software to build great products and help businesses succeed with their goals. With extensive experience in web development across all layers - from databases to services to user interfaces - I appreciate good design and am highly adaptable in quickly changing technical environments. My strong organizational and analytical skills complement my technical expertise in Java/Java EE development and modern web technologies.",
+    "viewExperience": "View my experience"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "microservices": "Microservices"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "current": "Present",
+    "viewDetails": "View Details"
+  },
+  "education": {
+    "title": "Education",
+    "degrees": {
+      "softwareEngineer": {
+        "degree": "Software Engineer",
+        "institution": "Mohammed VI International Academy for Civil Engineering",
+        "period": "2012 - 2015",
+        "description": "Completed Software Engineering program with focus on practical software development and engineering principles."
+      },
+      "cpge": {
+        "degree": "Classes Préparatoires aux Grandes Écoles",
+        "institution": "CPGE",
+        "period": "2010 - 2012",
+        "description": "Intensive preparation program in Physics"
+      },
+      "baccalaureat": {
+        "degree": "Baccalaureat",
+        "institution": "High School",
+        "period": "2009 - 2010",
+        "description": "Mathematics specialization"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "resume": {
+    "professionalSummary": {
+      "title": "Professional Summary",
+      "description": "I am a passionate software engineer who loves building great products and helping companies succeed. With experience across all layers of web development—from databases to services to user interfaces—I value good design and adapt quickly to changing technologies. Strong organizational and analytical skills enhance my ability to deliver high-quality solutions."
+    },
+    "technicalSkills": {
+      "title": "Technical Skills"
+    },
+    "experience": {
+      "title": "Experience",
+      "positions": {
+        "techLeadIntelcia": {
+          "title": "Tech Lead Java Developer",
+          "company": "Intelcia",
+          "period": "2023 - Present",
+          "description": "Leading the development of a major system responsible for tracking and maintaining equipment across multiple French telecom operators for SFR.",
+          "responsibilities": [
+            "Led development of microservices-based applications",
+            "Implemented CI/CD pipelines using Gitlab CI/CD and Kubernetes",
+            "Mentored junior developers"
+          ]
+        },
+        "techLeadAtos": {
+          "title": "Tech Lead at Atos",
+          "company": "Atos Inc",
+          "period": "2020 - 2023",
+          "description": "Participated in the Digital Factory project for La Poste France, focusing on integrating premium offerings through a microservices architecture.",
+          "responsibilities": [
+            "Led development of microservices-based applications",
+            "Implemented CI/CD pipelines using Jenking and RedHat Open Shift",
+            "Led development of Angular based applications",
+            "Mentored junior developers"
+          ]
+        },
+        "techLeadDocaposte": {
+          "title": "Tech Lead and Software Engineer at Docaposte",
+          "company": "Docaposte",
+          "period": "2017 - 2020",
+          "description": "Participated in a major project for a Commercial Court client in France and led the development of an insurance solution for broker and agent management, policy management, benefits administration, and document management.",
+          "responsibilities": [
+            "Led development of Spring Boot based Application",
+            "Implemented CI/CD pipelines using Jenking",
+            "Led development of React based applications",
+            "Mentored junior developers"
+          ]
+        },
+        "softwareEngineerOritech": {
+          "title": "Software Engineer at Oritech",
+          "company": "Oritech",
+          "period": "2015 - 2017",
+          "description": "Developed various SaaS platforms including vehicle management and tracking systems, and RFID-based applications.",
+          "responsibilities": [
+            "Developed Spring Boot based Application",
+            "Developed an app with JQuery and JS"
+          ]
+        }
+      }
+    }
+  },
+  "navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  }
+} 

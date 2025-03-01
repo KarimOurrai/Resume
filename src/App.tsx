@@ -7,6 +7,7 @@ import Experience from "./pages/Experience.tsx";
 import Education from "./pages/Education.tsx";
 import Skills from "./pages/Skills.tsx";
 import Contact from "./pages/Contact.tsx";
+import './i18n/i18n';
 
 const App = () => {
   return (

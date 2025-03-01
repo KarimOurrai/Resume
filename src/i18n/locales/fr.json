@@ -1,0 +1,124 @@
+{
+  "home": {
+    "greeting": "Bonjour! Je suis",
+    "name": "Karim Ourrai",
+    "roles": {
+      "techLead": "Lead Technique",
+      "softwareEngineer": "Ingénieur Logiciel"
+    },
+    "description": "Je suis un ingénieur logiciel passionné qui aime écrire des logiciels pour créer d'excellents produits et aider les entreprises à réussir. Avec une vaste expérience dans le développement web à tous les niveaux - des bases de données aux services en passant par les interfaces utilisateur - j'apprécie la qualité de conception et je m'adapte rapidement aux environnements techniques en évolution. Mes solides compétences organisationnelles et analytiques complètent mon expertise technique en développement Java/Java EE et technologies web modernes.",
+    "viewExperience": "Voir mon expérience"
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "microservices": "Microservices"
+    }
+  },
+  "experience": {
+    "title": "Expérience",
+    "current": "Présent",
+    "viewDetails": "Voir les détails"
+  },
+  "education": {
+    "title": "Formation",
+    "degrees": {
+      "softwareEngineer": {
+        "degree": "Ingénieur Logiciel",
+        "institution": "Académie Internationale Mohammed VI de Génie Civil",
+        "period": "2012 - 2015",
+        "description": "Programme d'ingénierie logicielle axé sur le développement pratique de logiciels et les principes d'ingénierie."
+      },
+      "cpge": {
+        "degree": "Classes Préparatoires aux Grandes Écoles",
+        "institution": "CPGE",
+        "period": "2010 - 2012",
+        "description": "Programme de préparation intensive en Physique"
+      },
+      "baccalaureat": {
+        "degree": "Baccalauréat",
+        "institution": "Lycée",
+        "period": "2009 - 2010",
+        "description": "Spécialisation en Mathématiques"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  },
+  "resume": {
+    "professionalSummary": {
+      "title": "Résumé Professionnel",
+      "description": "Je suis un ingénieur logiciel passionné qui aime construire d'excellents produits et aider les entreprises à réussir. Avec une expérience dans toutes les couches du développement web - des bases de données aux services en passant par les interfaces utilisateur - j'apprécie la qualité de conception et m'adapte rapidement aux technologies changeantes. De solides compétences organisationnelles et analytiques renforcent ma capacité à fournir des solutions de haute qualité."
+    },
+    "technicalSkills": {
+      "title": "Compétences Techniques"
+    },
+    "experience": {
+      "title": "Expérience",
+      "positions": {
+        "techLeadIntelcia": {
+          "title": "Ingénieur Full-stack et Tech-Lead",
+          "company": "Intelcia",
+          "period": "Mars 2020 - Présent",
+          "description": "Participation au développement d'un système important responsable du suivi et de la maintenance des équipements entre plusieurs opérateurs de télécommunications français pour SFR.",
+          "responsibilities": [
+            "Développement et maintenance du back-end et front-end de l'application",
+            "Conception technique des modules frontend et backend",
+            "Support technique à l'équipe de développement",
+            "Renforcement de l'équipe de développement"
+          ]
+        },
+        "techLeadAtos": {
+          "title": "Ingénieur Full-stack et Tech-Lead",
+          "company": "Atos",
+          "period": "Février 2021 - Décembre 2022",
+          "description": "Participation au projet Digital Factory pour La Poste France, axé sur l'intégration d'offres premium via une architecture de microservices.",
+          "responsibilities": [
+            "Développement et maintenance du back-end et front-end de l'application",
+            "Conception technique des modules frontend et backend",
+            "Support technique à l'équipe de développement",
+            "Renforcement de l'équipe de développement"
+          ]
+        },
+        "techLeadDocaposte": {
+          "title": "Ingénieur Full-stack et Tech-Lead",
+          "company": "DOCAPOST",
+          "period": "Avril 2017 - Décembre 2020",
+          "description": "Participation à un grand projet pour un client du Tribunal de Commerce en France et direction du développement d'une solution d'assurance pour la gestion des courtiers et agents, la gestion des polices, l'administration des prestations et la gestion des documents.",
+          "responsibilities": [
+            "Développement et maintenance du back-end et front-end de l'application",
+            "Responsable de la création de microservices et de leur introduction dans une grande application monolithique",
+            "Assurance de la qualité du code avec des revues en binôme",
+            "Analyse des cas d'utilisation et proposition d'implémentation appropriée"
+          ]
+        },
+        "softwareEngineerOritech": {
+          "title": "Ingénieur Logiciel Full-stack",
+          "company": "Oritech",
+          "period": "Décembre 2015 - Avril 2017",
+          "description": "Développement de diverses plateformes SaaS incluant des systèmes de gestion et de suivi de véhicules, et des applications basées sur la RFID.",
+          "responsibilities": [
+            "Développement full-stack de plateformes de gestion de véhicules",
+            "Implémentation de solutions basées sur la RFID",
+            "Développement de systèmes de suivi"
+          ]
+        }
+      }
+    }
+  },
+  "navigation": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "education": "Formation",
+    "contact": "Contact"
+  }
+} 
