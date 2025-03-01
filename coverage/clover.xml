@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1740854670165" clover="3.2.0">
+  <project timestamp="1740854670165" name="All files">
+    <metrics statements="301" coveredstatements="267" conditionals="207" coveredconditionals="131" methods="54" coveredmethods="36" elements="562" coveredelements="434" complexity="0" loc="301" ncloc="301" packages="5" files="16" classes="16"/>
+    <package name="src">
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="App.tsx" path="/Users/karimourrai/java-journey-portfolio/src/App.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="214" coveredstatements="185" conditionals="109" coveredconditionals="63" methods="37" coveredmethods="23"/>
+      <file name="Footer.tsx" path="/Users/karimourrai/java-journey-portfolio/src/components/Footer.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+      </file>
+      <file name="LanguageSwitcher.tsx" path="/Users/karimourrai/java-journey-portfolio/src/components/LanguageSwitcher.tsx">
+        <metrics statements="14" coveredstatements="11" conditionals="14" coveredconditionals="6" methods="4" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+      </file>
+      <file name="Navigation.tsx" path="/Users/karimourrai/java-journey-portfolio/src/components/Navigation.tsx">
+        <metrics statements="23" coveredstatements="14" conditionals="38" coveredconditionals="17" methods="8" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+      </file>
+      <file name="ParticleGrid.tsx" path="/Users/karimourrai/java-journey-portfolio/src/components/ParticleGrid.tsx">
+        <metrics statements="125" coveredstatements="118" conditionals="21" coveredconditionals="13" methods="14" coveredmethods="12"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="18" count="532" type="stmt"/>
+        <line num="19" count="532" type="stmt"/>
+        <line num="20" count="532" type="stmt"/>
+        <line num="21" count="532" type="stmt"/>
+        <line num="22" count="532" type="stmt"/>
+        <line num="23" count="532" type="stmt"/>
+        <line num="24" count="532" type="stmt"/>
+        <line num="25" count="532" type="stmt"/>
+        <line num="26" count="532" type="stmt"/>
+        <line num="27" count="532" type="stmt"/>
+        <line num="28" count="532" type="stmt"/>
+        <line num="32" count="532" type="stmt"/>
+        <line num="33" count="532" type="stmt"/>
+        <line num="34" count="532" type="stmt"/>
+        <line num="35" count="532" type="stmt"/>
+        <line num="38" count="532" type="stmt"/>
+        <line num="39" count="532" type="stmt"/>
+        <line num="42" count="532" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="54" count="530" type="stmt"/>
+        <line num="55" count="530" type="stmt"/>
+        <line num="59" count="532" type="stmt"/>
+        <line num="62" count="532" type="stmt"/>
+        <line num="63" count="532" type="stmt"/>
+        <line num="66" count="532" type="stmt"/>
+        <line num="67" count="532" type="stmt"/>
+        <line num="70" count="532" type="stmt"/>
+        <line num="71" count="532" type="cond" truecount="0" falsecount="1"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="77" count="532" type="stmt"/>
+        <line num="78" count="532" type="stmt"/>
+        <line num="82" count="532" type="stmt"/>
+        <line num="83" count="532" type="cond" truecount="0" falsecount="1"/>
+        <line num="86" count="532" type="cond" truecount="1" falsecount="0"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="92" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="96" count="2" type="stmt"/>
+        <line num="97" count="2" type="stmt"/>
+        <line num="99" count="2" type="stmt"/>
+        <line num="100" count="2" type="stmt"/>
+        <line num="101" count="2" type="stmt"/>
+        <line num="102" count="2" type="stmt"/>
+        <line num="106" count="532" type="stmt"/>
+        <line num="107" count="532" type="stmt"/>
+        <line num="108" count="532" type="stmt"/>
+        <line num="109" count="532" type="stmt"/>
+        <line num="112" count="532" type="stmt"/>
+        <line num="113" count="532" type="stmt"/>
+        <line num="115" count="532" type="stmt"/>
+        <line num="116" count="141512" type="cond" truecount="1" falsecount="0"/>
+        <line num="118" count="140980" type="stmt"/>
+        <line num="119" count="140980" type="stmt"/>
+        <line num="120" count="140980" type="stmt"/>
+        <line num="122" count="140980" type="cond" truecount="1" falsecount="0"/>
+        <line num="123" count="1996" type="stmt"/>
+        <line num="124" count="1996" type="cond" truecount="1" falsecount="1"/>
+        <line num="127" count="1996" type="stmt"/>
+        <line num="128" count="1996" type="stmt"/>
+        <line num="129" count="1996" type="stmt"/>
+        <line num="130" count="1996" type="stmt"/>
+        <line num="131" count="1996" type="stmt"/>
+        <line num="137" count="2" type="stmt"/>
+        <line num="138" count="3" type="stmt"/>
+        <line num="139" count="3" type="stmt"/>
+        <line num="140" count="3" type="stmt"/>
+        <line num="141" count="3" type="stmt"/>
+        <line num="142" count="3" type="stmt"/>
+        <line num="143" count="3" type="stmt"/>
+        <line num="144" count="3" type="stmt"/>
+        <line num="146" count="3" type="stmt"/>
+        <line num="147" count="2" type="stmt"/>
+        <line num="148" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="150" count="2" type="stmt"/>
+        <line num="151" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="153" count="2" type="stmt"/>
+        <line num="154" count="2" type="stmt"/>
+        <line num="155" count="2" type="stmt"/>
+        <line num="158" count="2" type="stmt"/>
+        <line num="159" count="2" type="stmt"/>
+        <line num="160" count="2" type="stmt"/>
+        <line num="161" count="2" type="stmt"/>
+        <line num="164" count="2" type="stmt"/>
+        <line num="165" count="28" type="stmt"/>
+        <line num="166" count="532" type="stmt"/>
+        <line num="171" count="2" type="stmt"/>
+        <line num="172" count="2" type="cond" truecount="2" falsecount="1"/>
+        <line num="174" count="2" type="stmt"/>
+        <line num="176" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="180" count="2" type="stmt"/>
+        <line num="181" count="532" type="stmt"/>
+        <line num="182" count="532" type="cond" truecount="2" falsecount="0"/>
+        <line num="186" count="2" type="stmt"/>
+        <line num="188" count="2" type="stmt"/>
+        <line num="191" count="2" type="stmt"/>
+        <line num="192" count="0" type="stmt"/>
+        <line num="193" count="0" type="stmt"/>
+        <line num="196" count="2" type="stmt"/>
+        <line num="197" count="0" type="stmt"/>
+        <line num="198" count="0" type="stmt"/>
+        <line num="199" count="0" type="stmt"/>
+        <line num="202" count="2" type="stmt"/>
+        <line num="203" count="2" type="stmt"/>
+        <line num="204" count="2" type="stmt"/>
+        <line num="207" count="2" type="stmt"/>
+        <line num="208" count="2" type="stmt"/>
+        <line num="209" count="2" type="stmt"/>
+        <line num="211" count="2" type="stmt"/>
+        <line num="212" count="2" type="stmt"/>
+        <line num="214" count="2" type="stmt"/>
+        <line num="215" count="2" type="stmt"/>
+        <line num="216" count="2" type="stmt"/>
+        <line num="217" count="2" type="stmt"/>
+        <line num="218" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="219" count="2" type="stmt"/>
+        <line num="224" count="3" type="stmt"/>
+        <line num="233" count="2" type="stmt"/>
+      </file>
+      <file name="SkillLogos.tsx" path="/Users/karimourrai/java-journey-portfolio/src/components/SkillLogos.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="72" type="stmt"/>
+        <line num="12" count="72" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+      </file>
+      <file name="TechCube.tsx" path="/Users/karimourrai/java-journey-portfolio/src/components/TechCube.tsx">
+        <metrics statements="25" coveredstatements="16" conditionals="22" coveredconditionals="17" methods="6" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="58" count="18" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+      </file>
+      <file name="ThemeToggle.tsx" path="/Users/karimourrai/java-journey-portfolio/src/components/ThemeToggle.tsx">
+        <metrics statements="13" coveredstatements="12" conditionals="7" coveredconditionals="3" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="education.ts" path="/Users/karimourrai/java-journey-portfolio/src/data/education.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+      <file name="skillLogos.ts" path="/Users/karimourrai/java-journey-portfolio/src/data/skillLogos.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.i18n">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="i18n.ts" path="/Users/karimourrai/java-journey-portfolio/src/i18n/i18n.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages">
+      <metrics statements="64" coveredstatements="59" conditionals="98" coveredconditionals="68" methods="16" coveredmethods="12"/>
+      <file name="Contact.tsx" path="/Users/karimourrai/java-journey-portfolio/src/pages/Contact.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="22" coveredconditionals="22" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+      </file>
+      <file name="Education.tsx" path="/Users/karimourrai/java-journey-portfolio/src/pages/Education.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+      </file>
+      <file name="Experience.tsx" path="/Users/karimourrai/java-journey-portfolio/src/pages/Experience.tsx">
+        <metrics statements="12" coveredstatements="11" conditionals="16" coveredconditionals="8" methods="4" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="50" count="8" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="69" count="110" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+      </file>
+      <file name="Home.tsx" path="/Users/karimourrai/java-journey-portfolio/src/pages/Home.tsx">
+        <metrics statements="23" coveredstatements="19" conditionals="40" coveredconditionals="18" methods="6" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="107" count="2" type="stmt"/>
+      </file>
+      <file name="Skills.tsx" path="/Users/karimourrai/java-journey-portfolio/src/pages/Skills.tsx">
+        <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="17" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="72" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

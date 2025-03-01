@@ -16,6 +16,11 @@
     "allowJs": true,
     "noUnusedLocals": false,
     "strictNullChecks": false,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src"]
 }
