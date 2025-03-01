@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import { skillData } from '../lib/skill-data';
 
 interface SkillLogoProps {
   name: string;
@@ -27,40 +28,4 @@ const SkillLogo = ({ name, url, className = "" }: SkillLogoProps) => {
   );
 };
 
-export const skillLogos = {
-  Backend: {
-    "Java": "/logos/java.svg",
-    "Spring Boot": "/logos/spring.svg",
-    "Spring MVC": "/logos/spring.svg",
-    "Spring Batch": "/logos/spring.svg",
-    "PostgreSQL": "/logos/postgresql.svg",
-    "MySQL": "/logos/mysql.svg",
-    "Oracle": "/logos/oracle.svg",
-    "REST APIs": "/logos/api.svg",
-    "SOAP": "/logos/soap.svg",
-    "JPA/Hibernate": "/logos/hibernate.svg",
-    "EJB 3.0": "/logos/java.svg"
-  },
-  Frontend: {
-    "React": "/logos/react.svg",
-    "Angular": "/logos/angular.svg",
-    "TypeScript": "/logos/typescript.svg",
-    "JavaScript": "/logos/javascript.svg",
-    "HTML5": "/logos/html5.svg",
-    "CSS3": "/logos/css3.svg",
-    "JSF": "/logos/jsf.svg"
-  },
-  Microservices: {
-    "Docker": "/logos/docker.svg",
-    "Kubernetes": "/logos/kubernetes.svg",
-    "Apache Kafka": "/logos/kafka.svg",
-    "Cassandra": "/logos/cassandra.svg",
-    "ElasticSearch": "/logos/elasticsearch.svg",
-    "Kibana": "/logos/kibana.svg",
-    "Jenkins": "/logos/jenkins.svg",
-    "GitLab CI/CD": "/logos/gitlab.svg",
-    "OAuth/JWT": "/logos/oauth.svg"
-  }
-};
-
-export default SkillLogo; 
+export default SkillLogo;

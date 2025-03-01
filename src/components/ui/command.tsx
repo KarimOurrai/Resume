@@ -6,6 +6,10 @@ import { Search } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 
+interface CommandProps extends CommandPrimitive.CommandProps {
+  className?: string; // Add at least one property
+}
+
 const Command = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive>
@@ -21,7 +25,9 @@ const Command = React.forwardRef<
 ))
 Command.displayName = CommandPrimitive.displayName
 
-interface CommandDialogProps extends DialogProps {}
+interface CommandDialogProps extends DialogProps {
+  children: React.ReactNode;  // Add required children prop
+}
 
 const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
   return (
