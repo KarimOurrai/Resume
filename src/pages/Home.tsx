@@ -66,7 +66,7 @@ const Home = () => {
         style={{"--scroll-y": `-${scrollY * 0.5}px`, "--image-opacity": imageTransform} as React.CSSProperties}
       >
         <div className="relative">
-          <div className={`w-[100px] h-[100px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] border-4 border-pink-500 rounded-full transform rotate-6 ${theme === 'light' ? 'shadow-xl' : 'shadow-2xl'}`}></div>
+          <div className={`w-[100px] h-[100px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] border-4 border-pink-500 rounded-full transform rotate-6 ${styles.waveBorder} ${theme === 'light' ? 'shadow-xl' : 'shadow-2xl'}`}></div>
           <img
             src="/karim-profile.png"
             alt="Karim Ourrai"

@@ -30,16 +30,17 @@ const LanguageSwitcher = () => {
         className={`
           appearance-none
           ${i18n.dir() === 'rtl' ? 'pr-8 pl-3' : 'pl-8 pr-3'}
-          py-1.5
-          rounded-md
+          py-2
+          rounded-lg
           border-2
           transition-colors
           focus:outline-none
           focus:ring-2
           focus:ring-pink-500/20
+          shadow-md
           ${
             theme === 'light'
-              ? 'bg-white text-gray-600 border-gray-200 hover:border-pink-500/50'
+              ? 'bg-white text-gray-600 border-gray-300 hover:border-pink-500/50'
               : 'bg-[#1e2329] text-white/70 border-gray-700 hover:border-pink-500/50'
           }
         `}
@@ -61,4 +62,4 @@ const LanguageSwitcher = () => {
   );
 };
 
-export default LanguageSwitcher; 
+export default LanguageSwitcher;
