@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import { useTranslation } from "react-i18next";
 import styles from "./Home.module.css";
 import TechCube from "../components/TechCube";
+import AnimatedName from '../components/AnimatedName';
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -78,8 +79,14 @@ const Home = () => {
       {/* Main content */}
       <div className={`flex-1 ${isRTL ? 'lg:pr-24' : 'lg:pl-24'} pt-24 sm:pt-48 lg:pt-32 px-4 lg:px-8`}>
         <div className={`max-w-4xl ${isRTL ? 'mr-auto lg:ml-[500px]' : 'ml-0 lg:mr-[500px]'}`}>
-          <h1 className={`text-2xl lg:text-3xl mb-4 ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>{t('home.greeting')}</h1>
-          <h2 className={`text-3xl lg:text-4xl font-bold mb-4 ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>{t('home.name')}</h2>
+          <h1 className={`text-2xl lg:text-3xl mb-4 ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>
+            {t('home.greeting')}
+            <br />
+            <AnimatedName 
+              text={t('home.name')} 
+              className="font-semibold"
+            />
+          </h1>
           <div className="flex items-center gap-2 mb-6">
             <span className={`text-lg lg:text-xl ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>{t('home.roles.techLead')}</span>
             <span className="text-pink-500">•</span>

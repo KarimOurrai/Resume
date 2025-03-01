@@ -1,0 +1,16 @@
+// ...existing styles...
+
+@keyframes letter-bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-15%) scale(1.4);
+  }
+}
+
+.animate-letter-bounce {
+  animation: letter-bounce 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// ...existing styles...

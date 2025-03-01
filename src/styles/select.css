@@ -1,0 +1,21 @@
+/* Ensure the dropdown background matches the site's background */
+select.custom-select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+/* Style each option similarly */
+select.custom-select option {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+/* On hover, change option background to pink */
+select.custom-select option:hover,
+select.custom-select option:focus {
+  background-color: #ec4899 !important; /* Tailwind pink-500 */
+  color: white !important;
+}
