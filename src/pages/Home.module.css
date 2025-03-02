@@ -3,4 +3,37 @@
   opacity: var(--image-opacity);
 }
 
-/* Add your styles here or leave this file empty to satisfy module resolution. */
+.waveCircle {
+  position: absolute;
+  inset: -12px;  /* increased from -4px to make wave wider */
+  border-radius: 50%;
+  animation: waveRotate 10s linear infinite;
+}
+
+.waveCircle::before {
+  content: '';
+  position: absolute;
+  inset: -4px;  /* changed from 0 to create more space */
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 60deg,
+    #ec4899 120deg,
+    transparent 180deg,
+    transparent 240deg,
+    #ec4899 300deg,
+    transparent 360deg
+  );
+  animation: waveRotate 3s linear infinite;
+  filter: blur(12px);  /* increased blur for better effect */
+}
+
+@keyframes waveRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

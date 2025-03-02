@@ -63,15 +63,15 @@ const Home = () => {
 
       {/* Image - fixed at top with scroll animation */}
       <div 
-        className={`fixed ${isRTL ? 'left-0 sm:left-4 lg:left-8' : 'right-0 sm:right-4 lg:right-8'} top-20 sm:top-24 lg:top-24 transition-all duration-300 transform ${styles.imageContainer} px-4 sm:px-0`}
+        className={`fixed ${isRTL ? 'left-8 sm:left-12 lg:left-32' : 'right-8 sm:right-12 lg:right-32'} top-24 transition-all duration-300 transform ${styles.imageContainer}`}
         style={{"--scroll-y": `-${scrollY * 0.5}px`, "--image-opacity": imageTransform} as React.CSSProperties}
       >
-        <div className="relative">
-          <div className={`w-[100px] h-[100px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] border-4 border-pink-500 rounded-full transform rotate-6 ${styles.waveBorder} ${theme === 'light' ? 'shadow-xl' : 'shadow-2xl'}`}></div>
+        <div className="relative w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px]">
+          <div className={`absolute inset-0 ${styles.waveCircle}`}></div>
           <img
             src="/karim-profile.png"
             alt="Karim Ourrai"
-            className={`absolute top-0 ${isRTL ? 'right-0' : 'left-0'} w-[100px] h-[100px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] object-cover rounded-full -rotate-3 transition-transform hover:rotate-0 border-2 border-pink-500/30 ${theme === 'light' ? 'shadow-lg' : 'shadow-[0_0_30px_rgba(0,0,0,0.7)]'}`}
+            className={`absolute inset-0 w-full h-full object-cover rounded-full transition-transform hover:rotate-0`}
           />
         </div>
       </div>

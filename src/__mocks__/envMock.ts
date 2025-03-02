@@ -1,3 +1,9 @@
+declare global {
+  interface Window {
+    env: typeof env;
+  }
+}
+
 export const env = {
   VITE_GA_MEASUREMENT_ID: 'mock-ga-id'
 };

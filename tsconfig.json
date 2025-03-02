@@ -19,9 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true
+    "allowImportingTsExtensions": true
   },
   "include": ["src"]
 }
