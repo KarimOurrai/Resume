@@ -63,21 +63,45 @@ const Home = () => {
 
       {/* Image - fixed at top with scroll animation */}
       <div 
-        className={`fixed ${isRTL ? 'left-8 sm:left-12 lg:left-32' : 'right-8 sm:right-12 lg:right-32'} top-24 transition-all duration-300 transform ${styles.imageContainer}`}
+        className={`fixed ${isRTL ? 'left-8 sm:left-12 lg:left-32' : 'right-8 sm:right-12 lg:right-32'} top-20 sm:top-24 lg:top-24 transition-all duration-300 transform ${styles.imageContainer}`}
         style={{"--scroll-y": `-${scrollY * 0.5}px`, "--image-opacity": imageTransform} as React.CSSProperties}
       >
-        <div className="relative w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px]">
-          <div className={`absolute inset-0 ${styles.waveCircle}`}></div>
+        <div className="relative w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px]">
+          <div className={styles.circularWaves}>
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+              <defs>
+                <path id="circle-wave" d="M50,50 m-50,0 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0" />
+              </defs>
+              <g className={`${styles.parallax} ${styles.waveGroup1}`}>
+                <use href="#circle-wave" className={styles.wave1} />
+                <use href="#circle-wave" className={styles.wave2} />
+                <use href="#circle-wave" className={styles.wave3} />
+                <use href="#circle-wave" className={styles.wave4} />
+              </g>
+              <g className={`${styles.parallax} ${styles.waveGroup2}`}>
+                <use href="#circle-wave" className={styles.wave1} />
+                <use href="#circle-wave" className={styles.wave2} />
+                <use href="#circle-wave" className={styles.wave3} />
+                <use href="#circle-wave" className={styles.wave4} />
+              </g>
+              <g className={`${styles.parallax} ${styles.waveGroup3}`}>
+                <use href="#circle-wave" className={styles.wave1} />
+                <use href="#circle-wave" className={styles.wave2} />
+                <use href="#circle-wave" className={styles.wave3} />
+                <use href="#circle-wave" className={styles.wave4} />
+              </g>
+            </svg>
+          </div>
           <img
             src="/karim-profile.png"
             alt="Karim Ourrai"
-            className={`absolute inset-0 w-full h-full object-cover rounded-full transition-transform hover:rotate-0`}
+            className="absolute inset-0 w-full h-full object-cover rounded-full"
           />
         </div>
       </div>
 
       {/* Main content */}
-      <div className={`flex-1 ${isRTL ? 'lg:pr-24' : 'lg:pl-24'} pt-24 sm:pt-48 lg:pt-32 px-4 lg:px-8`}>
+      <div className={`flex-1 ${isRTL ? 'lg:pr-24' : 'lg:pl-24'} pt-36 sm:pt-48 lg:pt-32 px-4 lg:px-8`}>
         <div className={`max-w-4xl ${isRTL ? 'mr-auto lg:ml-[500px]' : 'ml-0 lg:mr-[500px]'}`}>
           <h1 className={`text-2xl lg:text-3xl mb-4 ${theme === 'light' ? 'text-gray-900' : 'text-white'}`}>
             {t('home.greeting')}
