@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 type GTagEvent = {
@@ -19,13 +19,11 @@ declare global {
   }
 }
 
-export default function GoogleAnalytics() {
+const GoogleAnalytics = () => {
   const location = useLocation();
-  // Use optional chaining to handle test environment
   const measurementId = import.meta?.env?.VITE_GA_MEASUREMENT_ID;
 
   useEffect(() => {
-    // Only track if gtag is available and we have a measurement ID
     if (typeof window.gtag !== 'undefined' && measurementId) {
       window.gtag('config', measurementId, {
         page_path: location.pathname + location.search
@@ -34,14 +32,23 @@ export default function GoogleAnalytics() {
   }, [location, measurementId]);
 
   return null;
-}
+};
 
-// Wrapper component to handle router context
 export function GoogleAnalyticsWrapper() {
+  let isRouterAvailable = true;
+
   try {
-    return <GoogleAnalytics />;
+    // This is okay because it's at the top level of the component
+    useLocation();
   } catch {
-    // Return null if not in router context
+    isRouterAvailable = false;
+  }
+
+  if (!isRouterAvailable) {
     return null;
   }
+
+  return <GoogleAnalytics />;
 }
+
+export default GoogleAnalytics;
