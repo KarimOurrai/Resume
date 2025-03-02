@@ -1,4 +1,5 @@
-require('jest-canvas-mock'); 
+require('@testing-library/jest-dom');
+require('jest-canvas-mock');
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,

@@ -21,7 +21,8 @@ declare global {
 
 export default function GoogleAnalytics() {
   const location = useLocation();
-  const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+  // Use optional chaining to handle test environment
+  const measurementId = import.meta?.env?.VITE_GA_MEASUREMENT_ID;
 
   useEffect(() => {
     // Only track if gtag is available and we have a measurement ID
