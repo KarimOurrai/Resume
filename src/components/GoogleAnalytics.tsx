@@ -20,18 +20,12 @@ declare global {
 }
 
 export default function GoogleAnalytics() {
-  let location;
-  try {
-    location = useLocation();
-  } catch {
-    // Return null if not in router context
-    return null;
-  }
-  
+  const location = useLocation();
   const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
   useEffect(() => {
-    if (typeof window.gtag !== 'undefined') {
+    // Only track if gtag is available and we have a measurement ID
+    if (typeof window.gtag !== 'undefined' && measurementId) {
       window.gtag('config', measurementId, {
         page_path: location.pathname + location.search
       });
@@ -39,4 +33,14 @@ export default function GoogleAnalytics() {
   }, [location, measurementId]);
 
   return null;
+}
+
+// Wrapper component to handle router context
+export function GoogleAnalyticsWrapper() {
+  try {
+    return <GoogleAnalytics />;
+  } catch {
+    // Return null if not in router context
+    return null;
+  }
 }

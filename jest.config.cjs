@@ -16,10 +16,5 @@ module.exports = {
     '^i18next$': '<rootDir>/src/__mocks__/i18next.js',
     '^src/i18n/i18n$': '<rootDir>/src/__mocks__/i18n.ts'
   },
-  collectCoverage: false, // disable coverage collection during test runs for faster execution
-  // If you require coverage runs, narrow its scope under collectCoverageFrom
-  // collectCoverageFrom: [
-  //   "src/**/*.{js,jsx,ts,tsx}",
-  //   "!src/vite-env.d.ts"
-  // ]
+  collectCoverage: false, 
 };
