@@ -1,16 +1,16 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Education from '../pages/Education';
-import { describe, expect, jest, test } from '@jest/globals';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Education from "../pages/Education";
+import { describe, expect, jest, test } from "@jest/globals";
 
 jest.mock("next-themes", () => ({
-  useTheme: () => ({ theme: "light" })
+  useTheme: () => ({ theme: "light" }),
 }));
 
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({
-    t: (key: string) => key  // simple echo to test translation keys
-  })
+    t: (key: string) => key, // simple echo to test translation keys
+  }),
 }));
 
 describe("Education Component", () => {
@@ -18,7 +18,7 @@ describe("Education Component", () => {
     render(<Education />);
     // Check that the education title is rendered based on the translation key.
     expect(screen.getByText(/education\.title/)).toBeDefined();
-    
+
     // Use getAllByText to verify that multiple education items are rendered.
     const degreeElements = screen.getAllByText(/education\.degrees\..*\.degree/);
     expect(degreeElements.length).toBeGreaterThan(0);

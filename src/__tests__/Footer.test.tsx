@@ -1,19 +1,19 @@
 /// <reference types="jest" />
-import { describe, expect, jest, test } from '@jest/globals';
+import { describe, expect, jest, test } from "@jest/globals";
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import Footer from "../components/Footer";
 
 // Mock useTheme from next-themes
 jest.mock("next-themes", () => ({
-  useTheme: () => ({ theme: "light" })
+  useTheme: () => ({ theme: "light" }),
 }));
 
 // Mock useTranslation from react-i18next
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({
-    t: (key: string) => key // simple echo to test translation keys
-  })
+    t: (key: string) => key, // simple echo to test translation keys
+  }),
 }));
 
 describe("Footer Component", () => {

@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from "react";
 import { cn } from "../lib/utils";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 interface AnimatedNameProps {
   text: string;
@@ -13,28 +13,26 @@ const isArabicChar = (char: string) => {
 
 const shouldAddTatweel = (char: string, nextChar: string) => {
   // Letters that shouldn't have Tatweel after them
-  const nonConnectingLetters = ['ا', 'د', 'ذ', 'ر', 'ز', 'و', 'ء', 'آ'];
-  
+  const nonConnectingLetters = ["ا", "د", "ذ", "ر", "ز", "و", "ء", "آ"];
+
   // Don't add Tatweel if:
   // 1. Current letter is non-connecting
   // 2. There's no next letter
   // 3. Next character is a space
-  return !nonConnectingLetters.includes(char) && 
-         nextChar && 
-         nextChar !== ' ';
+  return !nonConnectingLetters.includes(char) && nextChar && nextChar !== " ";
 };
 
 const splitArabicText = (text: string) => {
   if (!isArabicChar(text)) return text.split(/(?=[\s\S])/u);
-  
-  return text.split(' ').flatMap((word, wordIndex, wordsArr) => {
+
+  return text.split(" ").flatMap((word, wordIndex, wordsArr) => {
     const chars = [...word];
     const units = chars.map((char, i, arr) => {
       const nextChar = arr[i + 1];
       return shouldAddTatweel(char, nextChar) ? `${char}\u0640` : char;
     });
-    
-    return wordIndex < wordsArr.length - 1 ? [...units, ' '] : units;
+
+    return wordIndex < wordsArr.length - 1 ? [...units, " "] : units;
   });
 };
 
@@ -43,13 +41,13 @@ const AnimatedName: React.FC<AnimatedNameProps> = ({ text, className }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [isHovering, setIsHovering] = useState(false);
-  
-  const isArabic = i18n.language === 'ar';
+
+  const isArabic = i18n.language === "ar";
   const letters = splitArabicText(text);
 
   const startAnimation = useCallback(() => {
     if (!isHovering) {
-      setCurrentIndex(prev => (prev + 1) % letters.length);
+      setCurrentIndex((prev) => (prev + 1) % letters.length);
     }
   }, [letters.length, isHovering]);
 
@@ -59,18 +57,14 @@ const AnimatedName: React.FC<AnimatedNameProps> = ({ text, className }) => {
   }, [startAnimation]);
 
   return (
-    <bdi className={cn(
-      className, 
-      "inline-flex",
-      isArabic ? "flex-row-reverse" : "flex-row"
-    )}>
+    <bdi className={cn(className, "inline-flex", isArabic ? "flex-row-reverse" : "flex-row")}>
       {letters.map((unit, index) => (
         <bdi
           key={index}
           className={cn(
             "inline-block transition-all duration-300 ease-in-out",
-            unit === ' ' ? 'mx-2' : '',
-            ((index === currentIndex && !isHovering) || index === hoveredIndex)
+            unit === " " ? "mx-2" : "",
+            (index === currentIndex && !isHovering) || index === hoveredIndex
               ? "text-pink-500 animate-letter-bounce"
               : "hover:text-pink-500/70"
           )}
@@ -83,7 +77,7 @@ const AnimatedName: React.FC<AnimatedNameProps> = ({ text, className }) => {
             setIsHovering(false);
           }}
           style={{
-            animationDuration: '0.8s',
+            animationDuration: "0.8s",
           }}
         >
           {unit}

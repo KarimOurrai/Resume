@@ -5,14 +5,14 @@ declare global {
 }
 
 export const env = {
-  VITE_GA_MEASUREMENT_ID: 'mock-ga-id'
+  VITE_GA_MEASUREMENT_ID: "mock-ga-id",
 };
 
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   window.env = env;
 }
 
 export default {
   env,
-  mode: 'test'
+  mode: "test",
 };

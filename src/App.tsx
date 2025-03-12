@@ -7,29 +7,29 @@ import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
-import './i18n/i18n';
-import GoogleAnalytics from './components/GoogleAnalytics';
+import "./i18n/i18n";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const App = () => (
-  <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+  <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
     <>
       <GoogleAnalytics />
-      <div className="bg-[#1a1e23] relative">
+      <div className='bg-[#1a1e23] relative'>
         <ParticleGrid />
         <Navigation />
-        <section id="home">
+        <section id='home'>
           <Home />
         </section>
-        <section id="skills">
+        <section id='skills'>
           <Skills />
         </section>
-        <section id="experience">
+        <section id='experience'>
           <Experience />
         </section>
-        <section id="education">
+        <section id='education'>
           <Education />
         </section>
-        <section id="contact">
+        <section id='contact'>
           <Contact />
         </section>
         <Footer />

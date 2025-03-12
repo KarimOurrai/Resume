@@ -8,13 +8,13 @@
   --wave-inset: -2px;
   inset: var(--wave-inset);
   border-radius: 50%;
-  animation: 
+  animation:
     waveRotate 10s linear infinite,
     waveSize 4s ease-in-out infinite;
 }
 
 .waveCircle::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: var(--wave-inset);
   border-radius: 50%;
@@ -41,8 +41,13 @@
 }
 
 @keyframes waveSize {
-  0%, 100% { --wave-inset: -2px; }
-  50% { --wave-inset: -15px; }
+  0%,
+  100% {
+    --wave-inset: -2px;
+  }
+  50% {
+    --wave-inset: -15px;
+  }
 }
 
 .circularWaves {
@@ -74,7 +79,7 @@
 }
 
 .parallax > use {
-  animation: moveWaves 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  animation: moveWaves 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
   fill: #ec4899;
 }
 

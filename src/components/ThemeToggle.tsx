@@ -19,17 +19,13 @@ const ThemeToggle = () => {
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className={`transition-colors ${
-        theme === "dark" 
-          ? "text-white/70 hover:text-pink-500" 
+        theme === "dark"
+          ? "text-white/70 hover:text-pink-500"
           : "text-yellow-500 hover:text-yellow-600"
       }`}
-      aria-label="Toggle theme"
+      aria-label='Toggle theme'
     >
-      {theme === "dark" ? (
-        <Moon className="h-5 w-5" />
-      ) : (
-        <Sun className="h-5 w-5" />
-      )}
+      {theme === "dark" ? <Moon className='h-5 w-5' /> : <Sun className='h-5 w-5' />}
     </button>
   );
 };

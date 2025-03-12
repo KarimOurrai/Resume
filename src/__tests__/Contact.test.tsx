@@ -1,16 +1,16 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Contact from '../pages/Contact';
-import { describe, expect, jest, test } from '@jest/globals';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Contact from "../pages/Contact";
+import { describe, expect, jest, test } from "@jest/globals";
 
 jest.mock("next-themes", () => ({
-  useTheme: () => ({ theme: "light" })
+  useTheme: () => ({ theme: "light" }),
 }));
 
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({
-    t: (key: string) => key  // echo translation key
-  })
+    t: (key: string) => key, // echo translation key
+  }),
 }));
 
 describe("Contact Component", () => {
