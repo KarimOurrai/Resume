@@ -4,7 +4,7 @@
     "outDir": "dist",
     "target": "ES2022",
     "lib": ["ES2022"],
-    "module": "ESNext",
+    "module": "Node16",
     "skipLibCheck": true,
 
     /* Bundler mode */
